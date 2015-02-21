@@ -10,6 +10,9 @@ group :test do
   # Using the tag is an attempt of having a stable version to test against where we can ensure that
   # we test against the correct code.
   gem 'logstash-event', git: 'https://github.com/elasticsearch/logstash.git', tag: '1.5'
-  gem 'rubocop'
   gem 'lines'
+
+  gem 'rubocop'
+  gem 'mutant'
+  gem 'mutant-rspec'
 end
